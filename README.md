@@ -4,32 +4,33 @@ A Place to Grow, A Place to Learn
 ## To Setup the environment
 
 ### download pipenv -global
-code```
+```bash
 python3 -m pip install pipenv
 ```
 
 ### create a virtual environment
-code```
+```bash
 cd <Folder name>
 pipenv install --python3.10
 ```
 
 ### start the virtual environment
-code```
+```bash
 pipenv shell
 ```
+
 ### install the requirements
-code```
+```bash
 pipenv install requirements.txt
 ```
 
 ### create a .env file to store the SECRET_KEY
-code```
+```bash
 touch .env
 ```
 
 ### declare SECRET_KEY 
-code```
+```bash
 assign a random string of characters to the SECRET_KEY variable
 ```
 
