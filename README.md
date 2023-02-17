@@ -10,7 +10,7 @@ python3 -m pip install pipenv
 
 ### create a virtual environment
 ```bash
-cd <Folder name>
+cd <Folder name*
 pipenv install --python3.10
 ```
 
@@ -36,7 +36,8 @@ assign a random string of characters to the SECRET_KEY variable
 
 ## References and help
 
-> https://learndjango.com
-> https://docs.djangoproject.com
-> http://dj4e.org
-> https://djangoforbeginners.com
+* https://learndjango.com
+* https://docs.djangoproject.com
+* http://dj4e.org
+* https://djangoforbeginners.com
+* https://www.youtube.com/@CodingEntrepreneurs
