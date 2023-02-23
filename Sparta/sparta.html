@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Md to HTML</title>
+
+</head>
+<body>
+
+    <div class="head">
+        <h1> md to HTML </h1>
+    </div>
+    <div id = "main" class="container">
+        <input type="file" class="real-file" hidden="hidden" />
+        <button type="button" class="custom-button">CHOOSE A FILE</button>
+        <span class="custom-text">No file chosen, yet.</span>
+    </div>
+    
+
+    <script type = "text/javascript">
+        const realFileBtn = document.getElementById("main").getElementsByClassName("real-file")[0];
+        const customBtn = document.getElementById("main").getElementsByClassName("custom-button")[0];
+        const customTxt = document.getElementById("main").getElementsByClassName("custom-text")[0];
+
+        customBtn.addEventListener("click", function() {
+            realFileBtn.click();
+        });
+
+        realFileBtn.addEventListener("change", function() {
+        if (realFileBtn.value) {
+            customTxt.innerHTML = realFileBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+        } else {
+            customTxt.innerHTML = "No file chosen, yet.";
+        }
+        });
+
+    </script>
+
+
+</body>
+</html>
